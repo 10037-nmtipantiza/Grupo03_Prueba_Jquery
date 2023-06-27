@@ -1,0 +1,1526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>EFECTOS-JQUERY GRUPO 3</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+      <script src="https://kit.fontawesome.com/3188ec7792.js" crossorigin="anonymous"></script>
+
+    <!--JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- =======================================================
+  * Template Name: Arsha - v4.3.0
+  * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top ">
+        <div class="container d-flex align-items-center">
+
+            <h1 class="logo me-auto"><a href="index.html"><i class="fa-solid fa-house"></i></a></h1>
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link scrollto active" href="#">Home</a></li>
+                    <li><a class="nav-link scrollto" href="#hero">Inicio</a></li>
+                    <li><a class="nav-link scrollto" href="#faq">Efectos</a></li>
+
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
+
+        </div>
+    </header><!-- End Header -->
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="d-flex align-items-center">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1"
+                    data-aos="fade-up" data-aos-delay="10">
+                    <h1>Efectos de JQUERY</h1>
+                    <h2>
+                        Los efectos de jQuery permiten cambiar propiedades de estilo, posición, 
+                        visibilidad, tamaño, de los elementos de manera animada y 
+                        controlada. Estos efectos pueden aplicarse tanto al cargar la página 
+                        como en respuesta a eventos como clics, desplazamientos, etc.
+                        Estos efectos se logran utilizando los métodos y funciones 
+                        proporcionados por jQuery, como fadeIn(), fadeOut(), slideToggle(), animate().
+                    </h2>
+                    <div class="d-flex justify-content-center justify-content-lg-start">
+                        <a href="#faq" class="btn-get-started scrollto">Empezar</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="10">
+                    <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
+                </div>
+            </div>
+        </div>
+
+    </section><!-- End Hero -->
+
+    <main id="main">
+        <section id="faq" class="faq section-bg">
+            <div class="container" data-aos="fade-up">
+
+                <div class="section">
+                    <h2>Efectos de jQuery</h2>
+                </div>
+                <!-- OTRO TEMA -->
+                <br>
+                <div class="section-title">
+                    <h2>jQuery Ocultar/Mostrar</h2>
+                </div>
+
+                <div class="faq-list">
+                    <ul>
+                        <li data-aos="fade-up" data-aos-delay="5">
+                            <a data-bs-toggle="collapse" class="collapsed" data-bs-target="#faq-list-1">
+                                jQuery hide()
+                                <i class="bx bx-chevron-down icon-show"></i><i
+                                    class="bx bx-chevron-up icon-close"></i></a>
+                            <div id="faq-list-1" class="collapse" data-bs-parent=".faq-list">
+                                <br>
+                                <div class="text-center">
+                                    <h4>
+                                        La función hide() en jQuery se utiliza para ocultar los
+                                        elementos seleccionados en una página web. Puede ser
+                                        llamada en cualquier objeto jQuery, que generalmente es
+                                        un conjunto de elementos HTML seleccionados mediante un
+                                        selector CSS u otros métodos de jQuery.
+                                    </h4>
+                                </div>
+                                <p><b>Código</b></p>
+                                <code>
+                                <pre>
+                                    &lt;script&gt;
+                                      $(document).ready(function(){
+                                        $("p").click(function(){
+                                          $(this).hide();
+                                        });
+                                      });
+                                    &lt;/script&gt;
+
+                                    &lt;p&gt;If you click on me, I will disappear.&lt;/p&gt;
+                                    &lt;p&gt;Click me away!&lt;/p&gt;
+                                    &lt;p&gt;Click me too!&lt;/p&gt;
+                                    </pre>
+                                </code>
+                                <script>
+                                    $(document).ready(function () {
+                                        $("p.jhide").click(function () {
+                                            $(this).hide();
+                                        });
+                                    });
+                                </script>
+                                <div class="text-center">
+                                    <h2>Funcionamiento</h2>
+                                    <p class="jhide">If you click on me, I will disappear.</p>
+                                    <p class="jhide">Click me away!</p>
+                                    <p class="jhide">Click me too!</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li data-aos="fade-up" data-aos-delay="5">
+                            <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">
+                                jQuery hide() and show()
+                                <i class="bx bx-chevron-down icon-show"></i><i
+                                    class="bx bx-chevron-up icon-close"></i></a>
+                            <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+                                <br>
+                                <div class="text-center">
+                                    <h4>
+                                        La función hide() en jQuery se utiliza para ocultar
+                                        los elementos seleccionados, mientras que la función
+                                        show() se utiliza para mostrar los elementos ocultos
+                                        previamente.
+                                    </h4>
+                                </div>
+                                <p><b>Código</b></p>
+
+                                <code>
+                                    <pre>
+                                        &lt;script&gt;
+                                        $(document).ready(function(){
+                                          $("#hide").click(function(){
+                                            $("p").hide();
+                                          });
+                                          $("#show").click(function(){
+                                            $("p").show();
+                                          });
+                                        });
+                                        &lt;/script&gt;
+                                        &lt;p&gt;If you click on the "Hide" button, I will disappear.&lt;/p&gt;
+                                        &lt;button id="hide"&gt;Hide&lt;/button&gt;
+                                        &lt;button id="show"&gt;Show&lt;/button&gt;
+
+                                    </pre>
+                                </code>
+
+                                <script>
+                                    $(document).ready(function () {
+                                        $("#hide").click(function () {
+                                            $("p.hideshow").hide();
+                                        });
+                                        $("#show").click(function () {
+                                            $("p.hideshow").show();
+                                        });
+                                    });
+                                </script>
+                                <div class="text-center">
+                                    <h2 class="text-center">Funcionamiento</h2>
+                                    <p class="hideshow">If you click on the "Hide" button, I will disappear.</p>
+                                    <br>
+                                    <button class="btn btn-outline-primary header-btn btn-lg mt-2 center"
+                                        id="hide">Hide</button>
+                                    <button class="btn btn-outline-primary header-btn btn-lg mt-2 center"
+                                        id="show">Show</button>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li data-aos="fade-up" data-aos-delay="10">
+                            <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">
+                                jQuery toggle()
+                                <i class="bx bx-chevron-down icon-show"></i><i
+                                    class="bx bx-chevron-up icon-close"></i></a>
+                            <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+                                <br>
+                                <div class="text-center">
+                                    <h4>
+                                        La función toggle() en jQuery se utiliza para
+                                        alternar la visibilidad de los elementos seleccionados.
+                                        Si un elemento está oculto, toggle() lo mostrará,
+                                        y si está visible, lo ocultará.
+                                    </h4>
+                                </div>
+                                <code>
+                                    <pre>
+                                        &lt;script&gt;
+                                            $(document).ready(function(){
+                                              $("button").click(function(){
+                                                $("p").toggle();
+                                              });
+                                            });
+                                        &lt;/script&gt;
+                                        &lt;button&gt;Toggle between hiding and showing the paragraphs&lt;/button&gt;
+                                            
+                                        &lt;p&gt;This is a paragraph with little content.&lt;/p&gt;
+                                        &lt;p&gt;This is another small paragraph.&lt;/p&gt;
+                                    </pre>
+                                </code>
+
+                                <script>
+                                    $(document).ready(function () {
+                                        $("button.tog").click(function () {
+                                            $("p.jtoggle").toggle();
+                                        });
+                                    });
+                                </script>
+
+                                <div class="text-center">
+                                    <h2 class="text-center">Funcionamiento</h2>
+                                    <button class="tog btn btn-outline-primary">Toggle between hiding and showing the
+                                        paragraphs</button>
+                                    <p class="jtoggle">This is a paragraph with little content.</p>
+                                    <p class="jtoggle">This is another small paragraph.</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li data-aos="fade-up" data-aos-delay="10">
+                            <a data-bs-toggle="collapse" class="collapsed" data-bs-target="#faq-list-4">
+                                jQuery hide()
+                                <i class="bx bx-chevron-down icon-show"></i><i
+                                    class="bx bx-chevron-up icon-close"></i></a>
+                            <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
+                                <br>
+                                <div class="text-center">
+                                    <h4>
+                                        La función hide() en jQuery se utiliza para ocultar los
+                                        elementos seleccionados en una página web. Puede ser
+                                        llamada en cualquier objeto jQuery, que generalmente es
+                                        un conjunto de elementos HTML seleccionados mediante un
+                                        selector CSS u otros métodos de jQuery.
+                                    </h4>
+                                </div>
+                                <code>
+                                    <pre>
+                                        &lt;script&gt;
+                                        $(document).ready(function(){
+                                            $(".ex .hide").click(function(){
+                                                $(this).parents(".ex").hide("slow");
+                                            });
+                                        });
+                                        &lt;/script&gt;
+                                        
+                                        &lt;style&gt;
+                                        div.ex {
+                                            background-color: #e5eecc;
+                                            padding: 7px;
+                                            border: solid 1px #c3c3c3;
+                                        }
+                                        &lt;/style&gt;
+                                        &lt;h3&gt;Island Trading&lt;/h3&gt;
+                                        
+                                        &lt;div class="ex"&gt;
+                                            &lt;button class="hide"&gt;Hide me&lt;/button&gt;
+                                            &lt;p&gt;Contact: Helen Bennett&lt;br&gt;
+                                            Garden House Crowther Way&lt;br&gt;
+                                            London&lt;/p&gt;
+                                        &lt;/div&gt;
+                                        
+                                        &lt;h3&gt;Paris Specialities&lt;/h3&gt;
+                                        
+                                        &lt;div class="ex"&gt;
+                                            &lt;button class="hide"&gt;Hide me&lt;/button&gt;
+                                            &lt;p&gt;Contact: Marie Bertrand&lt;br&gt;
+                                            265, Boulevard Charonne&lt;br&gt;
+                                            Paris&lt;/p&gt;
+                                        &lt;/div&gt;
+                                    </pre>
+                                </code>
+
+                                <script>
+                                    $(document).ready(function () {
+                                        $(".ex .hidej").click(function () {
+                                            $(this).parents(".ex").hide("slow");
+                                        });
+                                    });
+                                </script>
+                                <style>
+                                    div.ex {
+                                        background-color: #e5eecc;
+                                        padding: 7px;
+                                        border: solid 1px #c3c3c3;
+                                    }
+                                </style>
+                                <div class="text-center">
+                                    <h3>Island Trading</h3>
+                                    <div class="ex">
+                                        <button class="hidej btn btn-outline-primary">Hide me</button>
+                                        <p>Contact: Helen Bennett<br>
+                                            Garden House Crowther Way<br>
+                                            London</p>
+                                    </div>
+                                    <h3>Paris Specialities</h3>
+                                    <div class="ex">
+                                        <button class="hidej btn btn-outline-primary">Hide me</button>
+                                        <p>Contact: Marie Bertrand<br>
+                                            265, Boulevard Charonne<br>
+                                            Paris</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- OTRO TEMA -->
+                <br>
+                <div class="section-title">
+                    <h2>jQuery Fade</h2>
+                </div>
+
+                <div class="faq-list">
+                    <ul>
+                        <li data-aos="fade-up" data-aos-delay="5">
+                            <a data-bs-toggle="collapse" class="collapsed" data-bs-target="#faq-list-5">
+                                jQuery fadeIn()
+                                <i class="bx bx-chevron-down icon-show"></i><i
+                                    class="bx bx-chevron-up icon-close"></i></a>
+                            <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
+                                <br>
+                                <div class="text-center">
+                                    <h4>
+                                        La función fadeIn() en jQuery se utiliza para
+                                        mostrar gradualmente los elementos seleccionados,
+                                        aplicando una transición de opacidad. Inicialmente,
+                                        los elementos están ocultos y luego se vuelven
+                                        gradualmente visibles.
+                                    </h4>
+                                </div>
+                                <p><b>Código</b></p>
+                                <code>
+                                    <pre>
+                                        &lt;script&gt;
+                                        $(document).ready(function(){
+                                            $("button").click(function(){
+                                                $("#div1").fadeIn();
+                                                $("#div2").fadeIn("slow");
+                                                $("#div3").fadeIn(3000);
+                                            });
+                                        });
+                                        &lt;/script&gt;
+
+                                        &lt;p&gt;Demonstrate fadeIn() with different parameters.&lt;/p&gt;
+                                        
+                                        &lt;button&gt;Click to fade in boxes&lt;/button&gt;&lt;br&gt;
+                                        &lt;br&gt;
+                                        &lt;div id="div1" style="width:80px;height:80px;display:none;background-color:red;"&gt;&lt;/div&gt;
+                                        &lt;br&gt;
+                                        &lt;div id="div2" style="width:80px;height:80px;display:none;background-color:green;"&gt;&lt;/div&gt;
+                                        &lt;br&gt;
+                                        &lt;div id="div3" style="width:80px;height:80px;display:none;background-color:blue;"&gt;&lt;/div&gt;
+                                    </pre>
+                                </code>
+
+                                <script>
+                                    $(document).ready(function () {
+                                        $("button.btfade").click(function () {
+                                            $("#div1").fadeIn();
+                                            $("#div2").fadeIn("slow");
+                                            $("#div3").fadeIn(3000);
+                                        });
+                                    });
+                                </script>
+
+                                <div class="text-center">
+                                    <p>Demonstrate fadeIn() with different parameters.</p>
+                                    <button class="btfade btn btn-outline-primary">Click to fade in
+                                        boxes</button><br><br>
+                                    <div id="div1" style="width:80px;height:80px;display:none;background-color:red;">
+                                    </div><br>
+                                    <div id="div2" style="width:80px;height:80px;display:none;background-color:green;">
+                                    </div><br>
+                                    <div id="div3" style="width:80px;height:80px;display:none;background-color:blue;">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li data-aos="fade-up" data-aos-delay="5">
+                            <a data-bs-toggle="collapse" data-bs-target="#faq-list-6" class="collapsed">
+                                jQuery fadeOut()
+                                <i class="bx bx-chevron-down icon-show"></i><i
+                                    class="bx bx-chevron-up icon-close"></i></a>
+                            <div id="faq-list-6" class="collapse" data-bs-parent=".faq-list">
+                                <br>
+                                <div class="text-center">
+                                    <h4>
+                                        La función fadeOut() en jQuery se utiliza para ocultar gradualmente
+                                        los elementos seleccionados, aplicando una transición de opacidad.
+                                        Los elementos se vuelven gradualmente transparentes hasta que estén
+                                        completamente ocultos.
+                                    </h4>
+                                </div>
+                                <p><b>Código</b></p>
+                                <code>
+                                    <pre>
+                                        &lt;script&gt;
+                                        $(document).ready(function(){
+                                          $("button").click(function(){
+                                            $("#div1").fadeOut();
+                                            $("#div2").fadeOut("slow");
+                                            $("#div3").fadeOut(3000);
+                                          });
+                                        });
+                                        &lt;/script&gt;
+                                        
+                                        &lt;p&gt;Demonstrate fadeOut() with different parameters.&lt;/p&gt;
+                                        
+                                        &lt;button&gt;Click to fade out boxes&lt;/button&gt;&lt;br&gt;
+                                        &lt;br&gt;
+                                        
+                                        &lt;div id="div1" style="width:80px;height:80px;background-color:red;"&gt;&lt;/div&gt;
+                                        &lt;br&gt;
+                                        &lt;div id="div2" style="width:80px;height:80px;background-color:green;"&gt;&lt;/div&gt;
+                                        &lt;br&gt;
+                                        &lt;div id="div3" style="width:80px;height:80px;background-color:blue;"&gt;&lt;/div&gt;
+                                    </pre>
+                                </code>
+
+                                <script>
+                                    $(document).ready(function () {
+                                        $("button.out").click(function () {
+                                            $("#div4").fadeOut();
+                                            $("#div5").fadeOut("slow");
+                                            $("#div6").fadeOut(3000);
+                                        });
+                                    });
+                                </script>
+
+                                <div class="text-center">
+                                    <p>Demonstrate fadeOut() with different parameters.</p>
+
+                                    <button class="out btn btn-outline-primary">Click to fade out boxes</button><br><br>
+
+                                    <div id="div4" style="width:80px;height:80px;background-color:red;"></div><br>
+                                    <div id="div5" style="width:80px;height:80px;background-color:green;"></div><br>
+                                    <div id="div6" style="width:80px;height:80px;background-color:blue;"></div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li data-aos="fade-up" data-aos-delay="10">
+                            <a data-bs-toggle="collapse" data-bs-target="#faq-list-7" class="collapsed">
+                                jQuery fadeToggle()
+                                <i class="bx bx-chevron-down icon-show"></i><i
+                                    class="bx bx-chevron-up icon-close"></i></a>
+                            <div id="faq-list-7" class="collapse" data-bs-parent=".faq-list">
+                                <br>
+                                <div class="text-center">
+                                    <h4>
+                                        La función fadeToggle() en jQuery se utiliza para alternar
+                                        la visibilidad de los elementos seleccionados mediante una
+                                        animación de desvanecimiento. Si los elementos están visibles,
+                                        fadeToggle() los ocultará gradualmente; si están ocultos,
+                                        fadeToggle() los mostrará gradualmente.
+                                    </h4>
+                                </div>
+                                <p><b>Código</b></p>
+
+                                <code>
+                                    <pre>
+                                        &lt;script&gt;
+                                        $(document).ready(function(){
+                                          $("button").click(function(){
+                                            $("#div1").fadeOut();
+                                            $("#div2").fadeOut("slow");
+                                            $("#div3").fadeOut(3000);
+                                          });
+                                        });
+                                        &lt;/script&gt;
+                                        
+                                        &lt;p&gt;Demonstrate fadeOut() with different parameters.&lt;/p&gt;
+                                        
+                                        &lt;button&gt;Click to fade out boxes&lt;/button&gt;&lt;br&gt;&lt;br&gt;
+                                        
+                                        &lt;div id="div1" style="width:80px;height:80px;background-color:red;"&gt;&lt;/div&gt;
+                                        &lt;br&gt;
+                                        &lt;div id="div2" style="width:80px;height:80px;background-color:green;"&gt;&lt;/div&gt;
+                                        &lt;br&gt;
+                                        &lt;div id="div3" style="width:80px;height:80px;background-color:blue;"&gt;&lt;/div&gt;
+                                    </pre>
+                                </code>
+
+
+                                <script>
+                                    $(document).ready(function () {
+                                        $("button.tog").click(function () {
+                                            $("#div7").fadeToggle();
+                                            $("#div8").fadeToggle("slow");
+                                            $("#div9").fadeToggle(3000);
+                                        });
+                                    });
+                                </script>
+
+                                <div class="text-center">
+                                    <p>Demonstrate fadeToggle() with different speed parameters.</p>
+
+                                    <button class="tog btn btn-outline-primary">Click to fade in/out
+                                        boxes</button><br><br>
+
+                                    <div id="div7" style="width:80px;height:80px;background-color:red;"></div>
+                                    <br>
+                                    <div id="div8" style="width:80px;height:80px;background-color:green;"></div>
+                                    <br>
+                                    <div id="div9" style="width:80px;height:80px;background-color:blue;"></div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li data-aos="fade-up" data-aos-delay="10">
+                            <a data-bs-toggle="collapse" class="collapsed" data-bs-target="#faq-list-8">
+                                jQuery fadeTo()
+                                <i class="bx bx-chevron-down icon-show"></i><i
+                                    class="bx bx-chevron-up icon-close"></i></a>
+                            <div id="faq-list-8" class="collapse" data-bs-parent=".faq-list">
+                                <br>
+
+                                <div class="text-center">
+                                    <h4>
+                                        La función fadeTo() en jQuery se utiliza para cambiar
+                                        gradualmente la opacidad de los elementos seleccionados
+                                        a un valor específico. Permite ajustar la opacidad de
+                                        los elementos de forma personalizada.
+                                    </h4>
+                                </div>
+                                <p><b>Código</b></p>
+
+                                <code>
+                                    <pre>
+                                        &lt;script&gt;
+                                        $(document).ready(function(){
+                                          $("button.fadeto").click(function(){
+                                            $("#div10").fadeTo("slow", 0.15);
+                                            $("#div11").fadeTo("slow", 0.4);
+                                            $("#div12").fadeTo("slow", 0.7);
+                                          });
+                                        });
+                                        &lt;/script&gt;
+                                        
+                                        &lt;p&gt;Demonstrate fadeTo() with different parameters.&lt;/p&gt;
+                                        
+                                        &lt;button class="fadeto"&gt;Click to fade boxes&lt;/button&gt;&lt;br&gt;&lt;br&gt;
+                                        
+                                        &lt;div id="div10" style="width:80px;height:80px;background-color:red;"&gt;&lt;/div&gt;
+                                        &lt;br&gt;
+                                        &lt;div id="div11" style="width:80px;height:80px;background-color:green;"&gt;&lt;/div&gt;
+                                        &lt;br&gt;
+                                        &lt;div id="div12" style="width:80px;height:80px;background-color:blue;"&gt;&lt;/div&gt;
+                                    </pre>
+                                </code>
+
+                                <script>
+                                    $(document).ready(function () {
+                                        $("button.fadeto").click(function () {
+                                            $("#div10").fadeTo("slow", 0.15);
+                                            $("#div11").fadeTo("slow", 0.4);
+                                            $("#div12").fadeTo("slow", 0.7);
+                                        });
+                                    });
+                                </script>
+
+                                <div class="text-center">
+                                    <p>Demonstrate fadeTo() with different parameters.</p>
+                                    <button class="fadeto btn btn-outline-primary">Click to fade boxes</button><br><br>
+                                    <div id="div10" style="width:80px;height:80px;background-color:red;"></div><br>
+                                    <div id="div11" style="width:80px;height:80px;background-color:green;"></div><br>
+                                    <div id="div12" style="width:80px;height:80px;background-color:blue;"></div>
+
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <!-- OTRO TEMA -->
+                <br>
+                <div class="section-title">
+                    <h2>jQuery Slide</h2>
+                </div>
+
+                <div class="faq-list">
+                    <ul>
+                        <li data-aos="fade-up" data-aos-delay="5">
+                            <a data-bs-toggle="collapse" class="collapsed" data-bs-target="#faq-list-9">
+                                jQuery slideDown()
+                                <i class="bx bx-chevron-down icon-show"></i><i
+                                    class="bx bx-chevron-up icon-close"></i></a>
+                            <div id="faq-list-9" class="collapse" data-bs-parent=".faq-list">
+                                <br>
+                                <p><b>Código</b></p>
+                                <code>
+                                    <pre>
+                                        &lt;script&gt;
+                                        $(document).ready(function(){
+                                            $("#flip").click(function(){
+                                                $("#panel").slideDown("slow");
+                                            });
+                                        });
+                                        &lt;/script&gt;
+                                        &lt;style&gt;
+                                        #panel, #flip {
+                                        padding: 5px;
+                                        text-align: center;
+                                        background-color: #e5eecc;
+                                        border: solid 1px #c3c3c3;
+                                        }
+                                        
+                                        #panel {
+                                        padding: 50px;
+                                        display: none;
+                                        }
+                                        &lt;/style&gt;
+                                        
+                                        &lt;div id="flip"&gt;Click to slide down panel&lt;/div&gt;
+                                        &lt;div id="panel"&gt;Hello world!&lt;/div&gt;
+                                    </pre>
+                                </code>
+
+                                <script>
+                                    $(document).ready(function () {
+                                        $("#flip").click(function () {
+                                            $("#panel").slideDown("slow");
+                                        });
+                                    });
+                                </script>
+
+                                <style>
+                                    #panel,
+                                    #flip {
+                                        padding: 5px;
+                                        text-align: center;
+                                        background-color: #e5eecc;
+                                        border: solid 1px #c3c3c3;
+                                    }
+
+                                    #panel {
+                                        padding: 50px;
+                                        display: none;
+                                    }
+                                </style>
+
+                                <div class="text-center">
+                                    <div id="flip">Click to slide down panel</div>
+                                    <div id="panel">Hello world!</div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li data-aos="fade-up" data-aos-delay="5">
+                            <a data-bs-toggle="collapse" data-bs-target="#faq-list-10" class="collapsed">
+                                jQuery slideUp()
+                                <i class="bx bx-chevron-down icon-show"></i><i
+                                    class="bx bx-chevron-up icon-close"></i></a>
+                            <div id="faq-list-10" class="collapse" data-bs-parent=".faq-list">
+                                <br>
+                                <p><b>Código</b></p>
+                                <code>
+                                    <pre>
+                                        &lt;script&gt;
+                                        $(document).ready(function(){
+                                            $("#flip").click(function(){
+                                                $("#panel").slideUp("slow");
+                                            });
+                                        });
+                                        &lt;/script&gt;
+                                        &lt;style&gt;
+                                        #panel, #flip {
+                                        padding: 5px;
+                                        text-align: center;
+                                        background-color: #e5eecc;
+                                        border: solid 1px #c3c3c3;
+                                        }
+                                        
+                                        #panel {
+                                        padding: 50px;
+                                        }
+                                        &lt;/style&gt;
+                                        
+                                        &lt;div id="flip"&gt;Click to slide up panel&lt;/div&gt;
+                                        &lt;div id="panel"&gt;Hello world!&lt;/div&gt;
+                                    </pre>
+                                </code>
+
+                                <script>
+                                    $(document).ready(function () {
+                                        $("#flip1").click(function () {
+                                            $("#panel1").slideUp("slow");
+                                        });
+                                    });
+                                </script>
+                                <style>
+                                    #panel1,
+                                    #flip1 {
+                                        padding: 5px;
+                                        text-align: center;
+                                        background-color: #e5eecc;
+                                        border: solid 1px #c3c3c3;
+                                    }
+
+                                    #panel1 {
+                                        padding: 50px;
+                                    }
+                                </style>
+                                <div class="text-center">
+                                    <div id="flip1">Click to slide up panel</div>
+                                    <div id="panel1">Hello world!</div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li data-aos="fade-up" data-aos-delay="10">
+                            <a data-bs-toggle="collapse" data-bs-target="#faq-list-11" class="collapsed">
+                                jQuery slideToggle()
+                                <i class="bx bx-chevron-down icon-show"></i><i
+                                    class="bx bx-chevron-up icon-close"></i></a>
+                            <div id="faq-list-11" class="collapse" data-bs-parent=".faq-list">
+                                <br>
+                                <p><b>Código</b></p>
+
+                                <code>
+                                    <pre>
+                                        &lt;script&gt;
+                                        $(document).ready(function(){
+                                            $("#flip").click(function(){
+                                                $("#panel").slideToggle("slow");
+                                            });
+                                        });
+                                        &lt;/script&gt;
+                                        &lt;style&gt;
+                                        #panel, #flip {
+                                        padding: 5px;
+                                        text-align: center;
+                                        background-color: #e5eecc;
+                                        border: solid 1px #c3c3c3;
+                                        }
+                                        
+                                        #panel {
+                                        padding: 50px;
+                                        display: none;
+                                        }
+                                        &lt;/style&gt;
+                                        
+                                        
+                                        &lt;div id="flip"&gt;Click to slide the panel down or up&lt;/div&gt;
+                                        &lt;div id="panel"&gt;Hello world!&lt;/div&gt;
+                                        
+                                    </pre>
+                                </code>
+
+                                <script>
+                                    $(document).ready(function () {
+                                        $("#flip2").click(function () {
+                                            $("#panel2").slideToggle("slow");
+                                        });
+                                    });
+                                </script>
+                                <style>
+                                    #panel2,
+                                    #flip2 {
+                                        padding: 5px;
+                                        text-align: center;
+                                        background-color: #e5eecc;
+                                        border: solid 1px #c3c3c3;
+                                    }
+
+                                    #panel2 {
+                                        padding: 50px;
+                                        display: none;
+                                    }
+                                </style>
+
+                                <div class="text-center">
+                                    <div id="flip2">Click to slide the panel down or up</div>
+                                    <div id="panel2">Hello world!</div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- OTRO TEMA -->
+                <br>
+                <div class="section-title">
+                    <h2>jQuery Animate</h2>
+                </div>
+
+                <div class="faq-list">
+                    <ul>
+                        <li data-aos="fade-up" data-aos-delay="10">
+                            <a data-bs-toggle="collapse" class="collapsed" data-bs-target="#faq-list-12">
+                                jQuery animate()
+                                <i class="bx bx-chevron-down icon-show"></i><i
+                                    class="bx bx-chevron-up icon-close"></i></a>
+                            <div id="faq-list-12" class="collapse" data-bs-parent=".faq-list">
+                                <br>
+                                <p><b>Código</b></p>
+                                <code>
+                                    <pre>
+                                        &lt;script&gt; 
+                                        $(document).ready(function(){
+                                          $("button").click(function(){
+                                            $("div").animate({left: '250px'});
+                                          });
+                                        });
+                                        &lt;/script&gt; 
+                                        
+                                        &lt;button&gt;Start Animation&lt;/button&gt;
+                                        
+                                        &lt;p&gt;By default, all HTML elements have a static 
+                                        position, and cannot be moved. To manipulate the position, 
+                                        
+                                        remember to first set the CSS position property of the 
+                                        element to relative, fixed, or absolute!&lt;/p&gt;
+                                        
+                                        &lt;div style="background:#98bf21;height:100px;
+                                        width:100px;position:absolute;"&gt;&lt;/div&gt;
+                                    </pre>
+                                </code>
+                                <script>
+                                    $(document).ready(function () {
+                                        $("button.animatebt").click(function () {
+                                            $("#anim1").animate({ left: '250px' });
+                                        });
+                                    });
+                                </script>
+
+                                <div class="text-center">
+                                    <button class="animatebt btn btn-outline-primary">Start Animation</button>
+                                    <p>By default, all HTML elements have a static position, and cannot be moved. To
+                                        manipulate the position, remember to first set the CSS position property of the
+                                        element to relative, fixed, or absolute!</p>
+
+                                    <div id="anim1"
+                                        style="background:#162f5c;height:100px;width:100px;position:absolute;">
+                                    </div> <br>
+                                    <br>
+
+                                </div>
+                                <br>
+                                <br>
+                            </div>
+                        </li>
+
+                        <li data-aos="fade-up" data-aos-delay="5">
+                            <a data-bs-toggle="collapse" data-bs-target="#faq-list-13" class="collapsed">
+                                jQuery animate() - Manipulate Multiple Properties
+                                <i class="bx bx-chevron-down icon-show"></i><i
+                                    class="bx bx-chevron-up icon-close"></i></a>
+                            <div id="faq-list-13" class="collapse" data-bs-parent=".faq-list">
+                                <br>
+                                <p><b>Código</b></p>
+                                <code>
+                                    <pre>
+                                        &lt;script&gt;
+                                        $(document).ready(function(){
+                                          $("#start-animation-btn2").click(function(){
+                                            $("#animated-div2").animate({
+                                              left: '250px',
+                                              opacity: '0.5',
+                                              height: '150px',
+                                              width: '150px'
+                                            });
+                                          });
+                                        });
+                                        &lt;/script&gt;
+                            
+                                        &lt;button id="start-animation-btn2"&gt;Start Animation&lt;/button&gt;
+                            
+                                        &lt;p&gt;By default, all HTML elements have a static position, 
+                                        and cannot be moved. To manipulate the position, remember 
+                                        
+                                        to first set the CSS position property of the element to relative, 
+                                        fixed, or absolute!&lt;/p&gt;
+                            
+                                        &lt;div id="animated-div2" style="background:#98bf21;
+                                        height:100px;width:100px;position:absolute;"&gt;&lt;/div&gt;
+                                    </pre>
+                                </code>
+
+                                <script>
+                                    $(document).ready(function () {
+                                        $("#start-animation-btn2").click(function () {
+                                            $("#animated-div2").animate({
+                                                left: '250px',
+                                                opacity: '0.5',
+                                                height: '150px',
+                                                width: '150px'
+                                            });
+                                        });
+                                    });
+                                </script>
+
+                                <div class="text-center">
+                                    <button id="start-animation-btn2" class="btn btn-outline-primary">Start
+                                        Animation</button>
+
+                                    <p>By default, all HTML elements have a static position,
+                                        and cannot be moved. To manipulate the position,
+                                        remember to first set the CSS position property
+                                        of the element to relative, fixed, or absolute!</p>
+
+                                    <div id="animated-div2"
+                                        style="background:#344b96;height:100px;width:100px;position:absolute;"></div>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li data-aos="fade-up" data-aos-delay="10">
+                            <a data-bs-toggle="collapse" data-bs-target="#faq-list-14" class="collapsed">
+                                jQuery animate() - - Using Relative Values
+                                <i class="bx bx-chevron-down icon-show"></i><i
+                                    class="bx bx-chevron-up icon-close"></i></a>
+                            <div id="faq-list-14" class="collapse" data-bs-parent=".faq-list">
+                                <br>
+                                <p><b>Código</b></p>
+
+                                <code>
+                                    <pre>
+                                        &lt;script&gt; 
+                                        $(document).ready(function(){
+                                          $("#start-animation-btn3").click(function(){
+                                            $("#animated-div3").animate({
+                                              left: '250px',
+                                              height: '+=150px',
+                                              width: '+=150px'
+                                            });
+                                          });
+                                        });
+                                        &lt;/script&gt; 
+
+                                        &lt;button id="start-animation-btn3"&gt;Start Animation&lt;/button&gt;
+
+                                        &lt;p&gt;By default, all HTML elements have a static position, 
+                                        and cannot be moved. To manipulate the position, remember 
+                                        to first set the CSS position property of the element to 
+                                        relative, fixed, or absolute!&lt;/p&gt;
+
+                                        &lt;div id="animated-div3" style="background:#98bf21;
+                                        height:100px;width:100px;position:absolute;"&gt;&lt;/div&gt;
+                                    </pre>
+                                </code>
+                                <script>
+                                    $(document).ready(function () {
+                                        $("#start-animation-btn3").click(function () {
+                                            $("#animated-div3").animate({
+                                                left: '250px',
+                                                height: '+=150px',
+                                                width: '+=150px'
+                                            });
+                                        });
+                                    });
+                                </script>
+                                <div class="text-center">
+                                    <button id="start-animation-btn3" class="btn btn-outline-primary">Start
+                                        Animation</button>
+
+                                    <p>By default, all HTML elements have a static position,
+                                        and cannot be moved. To manipulate the position,
+                                        remember to first set the CSS position property
+                                        of the element to relative, fixed, or absolute!</p>
+                                    <div id="animated-div3"
+                                        style="background:#173575;height:100px;width:100px;position:absolute;"></div>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li data-aos="fade-up" data-aos-delay="10">
+                            <a data-bs-toggle="collapse" data-bs-target="#faq-list-15" class="collapsed">
+                                jQuery animate() - Using Pre-defined Values
+                                <i class="bx bx-chevron-down icon-show"></i><i
+                                    class="bx bx-chevron-up icon-close"></i></a>
+                            <div id="faq-list-15" class="collapse" data-bs-parent=".faq-list">
+                                <br>
+                                <p><b>Código</b></p>
+
+                                <code>
+                                    <pre>
+                                        &lt;script&gt; 
+                                        $(document).ready(function(){
+                                          $("button").click(function(){
+                                            $("div").animate({
+                                              height: 'toggle'
+                                            });
+                                          });
+                                        });
+                                        &lt;/script&gt; 
+                                        &lt;/head&gt;
+                                        &lt;body&gt;
+
+                                        &lt;p&gt;Click the button multiple times to toggle the animation.&lt;/p&gt;
+
+                                        &lt;button&gt;Start Animation&lt;/button&gt;
+
+                                        &lt;p&gt;By default, all HTML elements have a static position, and cannot be moved. To manipulate the position, remember to first set the CSS position property of the element to relative, fixed, or absolute!&lt;/p&gt;
+
+                                        &lt;div style="background:#98bf21;height:100px;width:100px;position:absolute;"&gt;&lt;/div&gt;
+                                    </pre>
+                                </code>
+
+                                <script>
+                                    $(document).ready(function () {
+                                        $("button.btpre").click(function () {
+                                            $("#divpre").animate({
+                                                height: 'toggle'
+                                            });
+                                        });
+                                    });
+                                </script>
+
+
+                                <div class="text-center">
+                                    <p>Click the button multiple times to toggle the animation.</p>
+
+                                    <button class="btpre btn btn-outline-primary">Start Animation</button>
+
+                                    <p>By default, all HTML elements have a static position,
+                                        and cannot be moved. To manipulate the position,
+                                        remember to first set the CSS position property of
+                                        the element to relative, fixed, or absolute!</p>
+
+                                    <div id="divpre"
+                                        style="background:#10235f;height:100px;width:100px;position:absolute;"></div>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+
+                                </div>
+                            </div>
+                        </li>
+
+                        <li data-aos="fade-up" data-aos-delay="10">
+                            <a data-bs-toggle="collapse" data-bs-target="#faq-list-16" class="collapsed">
+                                jQuery animate() - Uses Queue Functionality
+                                <i class="bx bx-chevron-down icon-show"></i><i
+                                    class="bx bx-chevron-up icon-close"></i></a>
+                            <div id="faq-list-16" class="collapse" data-bs-parent=".faq-list">
+                                <br>
+                                <p><b>Código</b></p>
+
+                                <code>
+                                    <pre>
+                                        &lt;script&gt; 
+                                        $(document).ready(function(){
+                                          $("button").click(function(){
+                                            var div = $("div");  
+                                            div.animate({left: '100px'}, "slow");
+                                            div.animate({fontSize: '3em'}, "slow");
+                                          });
+                                        });
+                                        &lt;/script&gt; 
+                                        &lt;/head&gt;
+                                        &lt;body&gt;
+                                        
+                                        &lt;button&gt;Start Animation&lt;/button&gt;
+                                        
+                                        &lt;p&gt;By default, all HTML elements have a static position, 
+                                        and cannot be moved. To manipulate the position, remember to 
+                                        first set the CSS position property of the element to relative, 
+                                        fixed, or absolute!&lt;/p&gt;
+                                        
+                                        &lt;div style="background:#98bf21;height:100px;width:200px;position:absolute;"&gt;HELLO&lt;/div&gt;
+                                    </pre>
+                                </code>
+
+                                <script>
+                                    $(document).ready(function () {
+                                        $("button.btuses").click(function () {
+                                            var div = $("#divuses");
+                                            div.animate({ left: '100px' }, "slow");
+                                            div.animate({ fontSize: '3em' }, "slow");
+                                        });
+                                    });
+                                </script>
+
+
+                                <div class="text-center">
+                                    <button class="btuses btn btn-outline-primary">Start Animation</button>
+                                    <p>By default, all HTML elements have a static position,
+                                        and cannot be moved. To manipulate the position,
+                                        remember to first set the CSS position property
+                                        of the element to relative, fixed, or absolute!</p>
+                                    <div id="divuses"
+                                        style="background:#25797c;height:100px;width:200px;position:absolute;">HELLO
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="section-title">
+                    <h2>jQuery Stop()</h2>
+                </div>
+
+                <div class="faq-list">
+                    <ul>
+                        <li data-aos="fade-up" data-aos-delay="5">
+                            <a data-bs-toggle="collapse" class="collapsed" data-bs-target="#faq-list-17">
+                                jQuery stop() sliding
+                                <i class="bx bx-chevron-down icon-show"></i><i
+                                    class="bx bx-chevron-up icon-close"></i></a>
+                            <div id="faq-list-17" class="collapse" data-bs-parent=".faq-list">
+                                <br>
+                                <p><b>Código</b></p>
+                                <code>
+                                    <pre>
+                                        &lt;script&gt;
+                                        $(document).ready(function(){
+                                            $("#flip").click(function(){
+                                            $("#panel").slideDown(5000);
+                                            });
+                                            $("#stop").click(function(){
+                                            $("#panel").stop();
+                                            });
+                                        });
+                                        &lt;/script&gt;
+
+                                        &lt;style&gt;
+                                        #panel, #flip {
+                                            padding: 5px;
+                                            font-size: 18px;
+                                            text-align: center;
+                                            background-color: #555;
+                                            color: white;
+                                            border: solid 1px #666;
+                                            border-radius: 3px;
+                                        }
+
+                                        #panel {
+                                            padding: 50px;
+                                            display: none;
+                                        }
+                                        &lt;/style&gt;
+                                        &lt;button id="stop"&gt;Stop sliding&lt;/button&gt;
+                                        &lt;div id="flip"&gt;Click to slide down panel&lt;/div&gt;
+                                        &lt;div id="panel"&gt;Hello world!&lt;/div&gt;
+                                    </pre>
+                                </code>
+                                <script>
+                                    $(document).ready(function () {
+                                        $("#flip5").click(function () {
+                                            $("#panel5").slideDown(5000);
+                                        });
+                                        $("#stop5").click(function () {
+                                            $("#panel5").stop();
+                                        });
+                                    });
+                                </script>
+                                <style>
+                                    #panel5,
+                                    #flip5 {
+                                        padding: 5px;
+                                        font-size: 18px;
+                                        text-align: center;
+                                        background-color: #555;
+                                        color: white;
+                                        border: solid 1px #666;
+                                        border-radius: 3px;
+                                    }
+
+                                    #panel5 {
+                                        padding: 50px;
+                                        display: none;
+                                    }
+                                </style>
+                                <div class="text-center">
+                                    <button id="stop5" class="btn btn-outline-primary">Stop sliding</button>
+                                    <br>
+                                    <br>
+                                    <div id="flip5">Click to slide down panel</div>
+                                    <div id="panel5">Hello world!</div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li data-aos="fade-up" data-aos-delay="5">
+                            <a data-bs-toggle="collapse" data-bs-target="#faq-list-18" class="collapsed">
+                                jQuery stop() animation ( with parameters)
+                                <i class="bx bx-chevron-down icon-show"></i><i
+                                    class="bx bx-chevron-up icon-close"></i></a>
+                            <div id="faq-list-18" class="collapse" data-bs-parent=".faq-list">
+                                <br>
+                                <p><b>Código</b></p>
+                                <code>
+                                    <pre>
+                                        &lt;script&gt; 
+                                        $(document).ready(function(){
+                                          $("#start").click(function(){
+                                            $("div").animate({left: '100px'}, 5000);
+                                            $("div").animate({fontSize: '3em'}, 5000);
+                                          });
+                                          
+                                          $("#stop").click(function(){
+                                            $("div").stop();
+                                          });
+                                        
+                                          $("#stop2").click(function(){
+                                            $("div").stop(true);
+                                          });
+                                        
+                                          $("#stop3").click(function(){
+                                            $("div").stop(true, true);
+                                          }); 
+                                        });
+                                        &lt;/script&gt; 
+                                        &lt;/head&gt;
+                                        &lt;body&gt;
+                                        
+                                        &lt;button id="start"&gt;Start&lt;/button&gt;
+                                        &lt;button id="stop"&gt;Stop&lt;/button&gt;
+                                        &lt;button id="stop2"&gt;Stop all&lt;/button&gt;
+                                        &lt;button id="stop3"&gt;Stop but finish&lt;/button&gt;
+                                        
+                                        &lt;p&gt;The "Start" button starts the animation.&lt;/p&gt;
+                                        &lt;p&gt;The "Stop" button stops the current active animation, 
+                                        but allows the queued animations to be performed afterwards.&lt;/p&gt;
+                                        &lt;p&gt;The "Stop all" button stops the current active animation and clears the 
+                                        animation queue; so all animations on the element is stopped.&lt;/p&gt;
+                                        &lt;p&gt;The "Stop but finish" rushes through the current active animation, 
+                                        then it stops.&lt;/p&gt; 
+                                        
+                                        &lt;div style="background:#98bf21;height:100px;
+                                        width:200px;position:absolute;"&gt;HELLO&lt;/div&gt;
+                                    </pre>
+                                </code>
+                                <script>
+                                    $(document).ready(function () {
+                                        $("#start8").click(function () {
+                                            $("#divamin").animate({ left: '100px' }, 5000);
+                                            $("#divamin").animate({ fontSize: '3em' }, 5000);
+                                        });
+
+                                        $("#stop8").click(function () {
+                                            $("#divamin").stop();
+                                        });
+
+                                        $("#stop9").click(function () {
+                                            $("#divamin").stop(true);
+                                        });
+
+                                        $("#stop10").click(function () {
+                                            $("#divamin").stop(true, true);
+                                        });
+                                    });
+                                </script>
+
+
+                                <div class="text-center">
+                                    <button id="start8" class="btn btn-outline-primary">Start</button>
+                                    <button id="stop8" class="btn btn-outline-primary">Stop</button>
+                                    <button id="stop9" class="btn btn-outline-primary">Stop all</button>
+                                    <button id="stop10" class="btn btn-outline-primary">Stop but finish</button>
+
+                                    <p>The "Start" button starts the animation.</p>
+                                    <p>The "Stop" button stops the current active animation, but allows the queued
+                                        animations to be performed afterwards.</p>
+                                    <p>The "Stop all" button stops the current active animation and clears the
+                                        animation queue; so all animations on the element is stopped.</p>
+                                    <p>The "Stop but finish" rushes through the current active animation, then it stops.
+                                    </p>
+
+                                    <div id="divamin"
+                                        style="background:#162472;height:100px;width:200px;position:absolute;">HELLO
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="section-title">
+                    <h2>jQuery Callback Functions</h2>
+                </div>
+
+                <div class="faq-list">
+                    <ul>
+                        <li data-aos="fade-up" data-aos-delay="5">
+                            <a data-bs-toggle="collapse" class="collapsed" data-bs-target="#faq-list-19">
+                                jQuery with Callback
+                                <i class="bx bx-chevron-down icon-show"></i><i
+                                    class="bx bx-chevron-up icon-close"></i></a>
+                            <div id="faq-list-19" class="collapse" data-bs-parent=".faq-list">
+                                <br>
+                                <p><b>Código</b></p>
+                                <code>
+                                    <pre>
+                                        &lt;script&gt;
+                                        $(document).ready(function(){
+                                            $("button").click(function(){
+                                                $("p").hide("slow", function(){
+                                            alert("The paragraph is now hidden");
+                                                });
+                                            });
+                                        });
+                                      &lt;/script&gt;
+                                      &lt;button&gt;Hide&lt;/button&gt;
+                                     &lt;p&gt;This is a paragraph with little content.&lt;/p&gt;
+                                    </pre>
+                                </code>
+                                <script>
+                                    $(document).ready(function () {
+                                        $("button.btcall").click(function () {
+                                            $("p.pcall").hide("slow", function () {
+                                                alert("Desarollo Web");
+                                            });
+                                        });
+                                    });
+                                </script>
+                                <div class="text-center">
+                                    <button class="btcall btn btn-outline-primary">Hide</button>
+                                    <p class="pcall">This is a paragraph with little content.</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li data-aos="fade-up" data-aos-delay="5">
+                            <a data-bs-toggle="collapse" data-bs-target="#faq-list-20" class="collapsed">
+                                jQuery without Callback
+                                <i class="bx bx-chevron-down icon-show"></i><i
+                                    class="bx bx-chevron-up icon-close"></i></a>
+                            <div id="faq-list-20" class="collapse" data-bs-parent=".faq-list">
+                                <br>
+                                <p><b>Código</b></p>
+                                <code>
+                                    <pre>
+                                        &lt;script&gt;
+                                        $(document).ready(function(){
+                                          $("button").click(function(){
+                                            $("p").hide(1000);
+                                            alert("The paragraph is now hidden");
+                                          });
+                                        });
+                                      &lt;/script&gt;
+                                    
+                                      &lt;button&gt;Hide&lt;/button&gt;
+                                    
+                                      &lt;p&gt;This is a paragraph with little content.&lt;/p&gt;
+                                    </pre>
+                                </code>
+                                <script>
+                                    $(document).ready(function () {
+                                        $("button.btwitho").click(function () {
+                                            $("p.pwith").hide(1000);
+                                            alert("The paragraph is now hidden");
+                                        });
+                                    });
+                                </script>
+
+                                <div class="text-center">
+                                    <button class="btwitho btn btn-outline-primary">Hide</button>
+                                    <p class="pwith">This is a paragraph with little content.</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="section-title">
+                    <h2>jQuery Chaining</h2>
+                </div>
+
+                <div class="faq-list">
+                    <ul>
+                        <li data-aos="fade-up" data-aos-delay="5">
+                            <a data-bs-toggle="collapse" class="collapsed" data-bs-target="#faq-list-21">
+                                jQuery chaining
+                                <i class="bx bx-chevron-down icon-show"></i><i
+                                    class="bx bx-chevron-up icon-close"></i></a>
+                            <div id="faq-list-21" class="collapse" data-bs-parent=".faq-list">
+                                <br>
+                                <p><b>Código</b></p>
+                                <code>
+                                    <pre>
+                                        &lt;script&gt;
+                                        $(document).ready(function(){
+                                            $("button").click(function(){
+                                                $("#p1").css("color", "red").slideUp(2000).slideDown(2000);
+                                            });
+                                        });
+                                        &lt;/script&gt;
+                                    </pre>
+                                </code>
+                                <script>
+                                    $(document).ready(function () {
+                                        $("button.btchai").click(function () {
+                                            $("#p9").css("color", "red").slideUp(2000).slideDown(2000);
+                                        });
+                                    });
+                                </script>
+
+                                <div class="text-center">
+                                    <p id="p9">jQuery is fun!!</p>
+                                    <button class="btchai btn btn-outline-primary">Click Desarollo Web</button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main><!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-6 col-md-6 footer-contact">
+                        <h3>Aplicación de Tecnologías Web</h3>
+                        <p>
+                            <strong>NRC:</strong> 10037 <br>
+                            <strong>Efectos de jQuery</strong>
+                        </p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Grupo N° 3</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> Quishpe Anthony</li>
+                            <li><i class="bx bx-chevron-right"></i> Tipantiza Nayeli</li>
+                            <li><i class="bx bx-chevron-right"></i> Topon Kevin</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="container footer-bottom clearfix">
+            <div class="copyright">
+                &copy; Copyright <strong><span>GRUPO 3</span></strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+                <!-- Licensing information: https://bootstrapmade.com/license/ -->
+                <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/ -->
+            </div>
+        </div>
+    </footer><!-- End Footer -->
+
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
